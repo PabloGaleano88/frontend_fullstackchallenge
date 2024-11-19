@@ -1,0 +1,123 @@
+:root {
+  font-family: "SF Distant Galaxy", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  /*   background-color: #0e0e0e; */
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: 17px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.images img {
+  margin-top: 25px;
+  height: 10vw;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+button {
+  border: solid 2px yellow;
+  border-radius: 15px;
+  background-color: black;
+  color: yellow;
+  margin: 20px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  border: solid 2px yellow;
+  border-radius: 15px;
+  background-color: yellow;
+  color: black;
+  margin-inline: 20px;
+  width: 100px;
+  height: 30px;
+}
+
+button:disabled {
+  background-color: black;
+  color: grey;
+  border: 1px solid red;
+  cursor: not-allowed;
+}
+
+.limit-selector {
+  margin: auto;
+}
+
+.search-item-bar {
+  margin-block: 30px;
+  display: flex;
+  width: 95%;
+  justify-items: center;
+}
+
+.search-box input {
+  width: auto;
+  max-width: 300px;
+}
+
+.spacer {
+  margin: auto;
+}
+
+input {
+  margin: auto;
+  width: 300px;
+  border: solid 2px yellow;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.sort-selector {
+  margin: auto;
+}

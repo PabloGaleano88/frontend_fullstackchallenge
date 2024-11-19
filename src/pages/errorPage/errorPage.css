@@ -1,0 +1,9 @@
+.errorpage-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorpage-image img {
+  height: 400px;
+}

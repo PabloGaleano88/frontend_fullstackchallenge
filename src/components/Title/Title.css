@@ -1,0 +1,9 @@
+.title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.starwarsimg {
+  height: 200px;
+}

@@ -1,0 +1,59 @@
+.mainpage-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vader-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  & img {
+    opacity: 0;
+    height: 400px;
+    animation: fadeIn 6s cubic-bezier(1, 0.08, 0.81, 0.74) forwards;
+  }
+}
+.vader {
+  position: static;
+}
+
+.lightsaber {
+  position: absolute;
+  rotate: 135deg;
+  top: 40%;
+  right: 53%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blade {
+  width: 4px;
+  height: 170px;
+  background: radial-gradient(circle, #ff0000 30%, rgb(255, 0, 0) 90%);
+  box-shadow: 0 0 15px 5px #ff0000, 0 0 30px 10px rgb(131, 0, 0);
+  margin-top: -10px;
+  animation: flicker 0.3s infinite alternate,
+    fadeIn 4s cubic-bezier(1, 0.08, 0.81, 0.74) forwards;
+}
+
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 15px 5px #ff0000, 0 0 30px 10px rgb(255, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 10px 3px #ff0000, 0 0 25px 8px rgb(189, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
