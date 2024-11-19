@@ -1,7 +1,7 @@
 import React from 'react'
 import StarWarsImage from "../../assets/starwarsimage.png"
 
-import "./title.css"
+import "./Title.css"
 
 const Title: React.FC = () => {
     return (
